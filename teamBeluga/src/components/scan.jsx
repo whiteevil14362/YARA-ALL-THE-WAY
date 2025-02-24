@@ -17,7 +17,7 @@ const HashScanner = () => {
         `https://www.virustotal.com/api/v3/files/${hash}`,
         {
           headers: {
-            "x-apikey": import.meta.env.VITE_VIRUS_TOTAL_API,
+            "x-apikey": import.meta.env.VITE_VIRUS_TOTAL_API_KEY,
           },
         }
       );

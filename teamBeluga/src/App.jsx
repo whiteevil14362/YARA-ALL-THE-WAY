@@ -3,12 +3,26 @@ import { motion } from "framer-motion";
 import Home from "./pages/homePage";
 import HistoryPage from "./pages/historyPage";
 import Navbar from "./components/navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ScanningPage from "./pages/scanningPage";
 import Drawer from "./components/drawer";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Function to generate a random token
+  const generateRandomToken = () => {
+    return Math.random().toString(36).substr(2, 16); // Generates a random 16-character token
+  };
+
+  // Check if a token exists in localStorage, if not, generate and save one
+  useEffect(() => {
+    const existingToken = localStorage.getItem("userToken");
+    if (!existingToken) {
+      const token = generateRandomToken();
+      localStorage.setItem("userToken", token);
+    }
+  }, []); // Empty dependency array ensures this runs only once when the component mounts
 
   return (
     <div className="h-screen w-full fixed flex overflow-hidden">

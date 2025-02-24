@@ -8,7 +8,7 @@ import DOCXReport from "./scanreport/docxreport";
 import EXEReport from "./scanreport/exereport";
 
 const ScanningPage = () => {
-  const userid = "yyoo";
+  const userid = localStorage.getItem("userToken")
   const location = useLocation();
   const navigate = useNavigate();
   const files = location.state?.files

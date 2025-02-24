@@ -8,13 +8,14 @@ const HistoryPage = () => {
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [threatFilter, setThreatFilter] = useState("All");
+  const user = localStorage.getItem("userToken")
 
 
   useEffect(() => {
     const fetchStats = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/stats?userid=yyoo`
+          `${import.meta.env.VITE_API_URL}/stats?userid=${user}`
         );
         if (!response.ok) throw new Error("Failed to fetch stats");
         const data = await response.json();
