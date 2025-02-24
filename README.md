@@ -21,6 +21,12 @@ Static analysis is a critical approach in malware detection as it allows us to i
        / / ___ |/ _, _/ ___ |      / / ___ |/ _, _/ ___ |      / / ___ |/ _, _/ ___ |
       /_/_/  |_/_/ |_/_/  |_|     /_/_/  |_/_/ |_/_/  |_|     /_/_/  |_/_/ |_/_/  |_|
      
+## HOW TO USE THIS REPO
+- Clone the repo, go to backend folder and open the terminal and write pip install -r requirements.txt
+- Also install the node modules in the folder named teamBeluga(frontend)
+- tthen for starting frontend type **npm run dev**, now your frontend is started 
+- now to start ur backend go to backend folder and type **python server.py**
+
 
 
 ## Tech Stack
@@ -96,3 +102,4 @@ For a more comprehensive threat analysis, consider using **dynamic analysis in a
 If there is a text file, the it converts it to exe and pdf file, it checks for both.
 •	Now files are checked with corresponding YARA rules.
 •	Now we create a function in which we run a loop on all the samples
+
