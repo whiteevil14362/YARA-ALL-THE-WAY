@@ -20,7 +20,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # Ensure the upload folder exists
 ALLOWED_EXTENSIONS = {'pdf', 'docx','exe'}
 
 # Securely fetch MongoDB URL from environment
-MONGO_URL = os.getenv("MONGO_URL")
+MONGO_URL = "mongodb+srv://lolplaynoob:rZWMG4CB11amr1wH@yara.qs2mu.mongodb.net/?retryWrites=true&w=majority&appName=YARA"
 client = MongoClient(MONGO_URL)
 db = client["scan_database"]
 history_collection = db.history  # Correct collection reference
