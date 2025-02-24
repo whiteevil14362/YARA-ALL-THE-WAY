@@ -4,6 +4,12 @@ Project of Team BingChilling for KrackHack 2.0
 
 **YARA-ALL-THE-WAY** is one of the best and easiest-to-use static analysis tools designed to detect malicious files across various formats like `.exe`, `.pdf`, `.docx`, and more. By leveraging **YARA rules**, **file headers**, and **static indicators**, we perform **deep inspection** without executing the file. Our solution integrates **Python's PE file analysis** and **VirusTotal API** to ensure robust detection.
 
+**FEATURES**
+-*ROBUST USE OF STATIC ANALYSIS*
+-*ADDITIONAL USE OF VIRUSTOTAL API*(STRICTLY FOR KNOWN HASHES)
+-*PROVIDES USER HISTORY FOR FUTURE REFRENCES*
+
+
 Static analysis is a critical approach in malware detection as it allows us to identify potential threats based on predefined rules and patterns without executing the file. This method is effective for identifying known malware, embedded malicious scripts, and obfuscation techniques used by attackers.
 
 ---
