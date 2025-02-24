@@ -2,6 +2,6 @@ Flask
 Flask-Cors
 pymongo
 yara-python
-typing
+pefile
+PyPDF2
 uuid
-datetime
