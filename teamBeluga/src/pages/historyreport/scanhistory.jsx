@@ -7,7 +7,7 @@ import PDFBlock from "./pdfblock";
 import EXEBlock from "./exeblock";
 import DOCXBlock from "./docxblock";
 
-const ScanHistory = ({ userid = "yyoo", searchTerm, threatFilter }) => {
+const ScanHistory = ({ userid , searchTerm, threatFilter }) => {
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);

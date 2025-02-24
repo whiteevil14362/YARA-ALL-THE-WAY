@@ -161,7 +161,7 @@ const HistoryPage = () => {
       {/* Scan History Section */}
       <div className="mt-10">
         <h2 className="text-xl font-semibold mb-4">Recent Scans</h2>
-        <ScanHistory searchTerm={searchTerm} threatFilter={threatFilter} />
+        <ScanHistory searchTerm={searchTerm} threatFilter={threatFilter} userid={userid} />
       </div>
     </div>
   );
